@@ -10,6 +10,7 @@
 		518BF12A17674FEE0063A7FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518BF12917674FEE0063A7FA /* Foundation.framework */; };
 		518BF12D17674FEE0063A7FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 518BF12C17674FEE0063A7FA /* main.m */; };
 		518BF13117674FEE0063A7FA /* airport_bssid.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 518BF13017674FEE0063A7FA /* airport_bssid.1 */; };
+		518BF138176770A90063A7FA /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518BF137176770A90063A7FA /* CoreWLAN.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		518BF12C17674FEE0063A7FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		518BF12F17674FEE0063A7FA /* airport-bssid-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "airport-bssid-Prefix.pch"; sourceTree = "<group>"; };
 		518BF13017674FEE0063A7FA /* airport_bssid.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = airport_bssid.1; sourceTree = "<group>"; };
+		518BF137176770A90063A7FA /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreWLAN.framework; path = System/Library/Frameworks/CoreWLAN.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				518BF138176770A90063A7FA /* CoreWLAN.framework in Frameworks */,
 				518BF12A17674FEE0063A7FA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +51,7 @@
 		518BF11D17674FEE0063A7FA = {
 			isa = PBXGroup;
 			children = (
+				518BF137176770A90063A7FA /* CoreWLAN.framework */,
 				518BF12B17674FEE0063A7FA /* airport-bssid */,
 				518BF12817674FEE0063A7FA /* Frameworks */,
 				518BF12717674FEE0063A7FA /* Products */,
