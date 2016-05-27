@@ -4,7 +4,7 @@ airport-bssid
 If you want to get associated to a specific bssid with Mac OS, use this one.
 
 ============
-### To Interop Tokyo NOC / STM team
+### にほんごで (ちょっと宣伝も)
 
 最近のMacのairportコマンドではBSSID指定でAPに接続できなくなっています。
 qpSHiNqpが[Interop Tokyo](http://www.interop.jp) 2013にSTMとして参加していた際に, このことが原因で困ったのでBSSID指定でAssocできるツールをつくりました。
