@@ -7,7 +7,7 @@ If you want to get associated to a specific bssid with Mac OS, use this one.
 ### To Interop Tokyo NOC / STM team
 
 最近のMacのairportコマンドではBSSID指定でAPに接続できなくなっています。
-qpSHiNqpが(Interop Tokyo)[http://www.interop.jp] 2013にSTMとして参加していた際に, このことが原因で困ったのでBSSID指定でAssocできるツールをつくりました。
+qpSHiNqpが[Interop Tokyo](http://www.interop.jp) 2013にSTMとして参加していた際に, このことが原因で困ったのでBSSID指定でAssocできるツールをつくりました。
 
 Interop TokyoにはShowNetと呼ばれるめちゃくちゃでかい展示ネットワークが構築され, 来場者や出展者などが利用する膨大な数のAPが設置されます.
 これらのAPは, 数種類の異なるポリシーのWiFiを吹いているのですが, 当然同じポリシーのものは同じESSID (通常SSIDと呼ばれる) で提供されます. ESSIDはユーザが個々のAPの設定を意識せずにWiFiを利用できるようにするある種の隠匿/カプセル化のための仕組みです.
