@@ -1,14 +1,15 @@
 CC=gcc
 SRC=airport-bssid/main.m
-FRAMEWORKS:= -framework Foundation -framework CoreWLAN
+FRAMEWORKS:= -framework Foundation -framework CoreWLAN -framework CoreLocation
 LIB:= -lobjc
 CFLAGS=-Wall -Werror -v
 TARGET=Build/airport-bssid
+OBJECTS=$(SRC:%.m=%.o)
 
-all: $(SRC) $(TARGET)
+all: $(TARGET)
 
 $(TARGET): $(OBJECTS)
-	$(CC) -o $(OBJECTS) $@ $(CFLAGS) $(LIB) $(FRAMEWORKS) -o $(TARGET) $(SRC)
+	$(CC) $^ $(CFLAGS) $(LIB) $(FRAMEWORKS) -o $@
 
 .m.o:
 	$(CC) -c -Wall $< -o $@
