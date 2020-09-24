@@ -11,6 +11,7 @@
 		518BF12D17674FEE0063A7FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 518BF12C17674FEE0063A7FA /* main.m */; };
 		518BF13117674FEE0063A7FA /* airport_bssid.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 518BF13017674FEE0063A7FA /* airport_bssid.1 */; };
 		518BF138176770A90063A7FA /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518BF137176770A90063A7FA /* CoreWLAN.framework */; };
+		51A3C61B251B94E400200D6B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A3C61A251B94E400200D6B /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,12 +28,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		518BF12617674FEE0063A7FA /* airport-bssid */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "airport-bssid"; sourceTree = BUILT_PRODUCTS_DIR; };
+		518BF12617674FEE0063A7FA /* airport-bssid */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; path = "airport-bssid"; sourceTree = BUILT_PRODUCTS_DIR; };
 		518BF12917674FEE0063A7FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		518BF12C17674FEE0063A7FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		518BF12F17674FEE0063A7FA /* airport-bssid-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "airport-bssid-Prefix.pch"; sourceTree = "<group>"; };
 		518BF13017674FEE0063A7FA /* airport_bssid.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = airport_bssid.1; sourceTree = "<group>"; };
 		518BF137176770A90063A7FA /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreWLAN.framework; path = System/Library/Frameworks/CoreWLAN.framework; sourceTree = SDKROOT; };
+		51A3C61A251B94E400200D6B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		51A3C61C251B988800200D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51A3C61D251BB55500200D6B /* airport-bssid.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "airport-bssid.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A3C61B251B94E400200D6B /* CoreLocation.framework in Frameworks */,
 				518BF138176770A90063A7FA /* CoreWLAN.framework in Frameworks */,
 				518BF12A17674FEE0063A7FA /* Foundation.framework in Frameworks */,
 			);
@@ -69,6 +74,7 @@
 		518BF12817674FEE0063A7FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51A3C61A251B94E400200D6B /* CoreLocation.framework */,
 				518BF12917674FEE0063A7FA /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -77,6 +83,7 @@
 		518BF12B17674FEE0063A7FA /* airport-bssid */ = {
 			isa = PBXGroup;
 			children = (
+				51A3C61D251BB55500200D6B /* airport-bssid.entitlements */,
 				518BF12C17674FEE0063A7FA /* main.m */,
 				518BF13017674FEE0063A7FA /* airport_bssid.1 */,
 				518BF12E17674FEE0063A7FA /* Supporting Files */,
@@ -88,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				518BF12F17674FEE0063A7FA /* airport-bssid-Prefix.pch */,
+				51A3C61C251B988800200D6B /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -126,6 +134,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 518BF11D17674FEE0063A7FA;
@@ -211,8 +220,11 @@
 		518BF13517674FEE0063A7FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "airport-bssid/airport-bssid.entitlements";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "airport-bssid/airport-bssid-Prefix.pch";
+				INFOPLIST_FILE = "airport-bssid/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -220,8 +232,11 @@
 		518BF13617674FEE0063A7FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "airport-bssid/airport-bssid.entitlements";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "airport-bssid/airport-bssid-Prefix.pch";
+				INFOPLIST_FILE = "airport-bssid/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSLocationUsageDescription</key>
+	<string>The latest CoreWLAN scan requires location authorization. The app requires location service only when scanning surround wireless networks.</string>
+</dict>
+</plist>
